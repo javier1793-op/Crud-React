@@ -1,0 +1,64 @@
+{
+  "zodiaco": [
+    {
+      "id": 1,
+      "nombre": "Aries",
+      "fecha": "18 Abril",
+      "compatibilidad": "Geminis"
+    },
+    {
+      "id": 2,
+      "nombre": "Tauro",
+      "fecha": "13 Mayo",
+      "compatibilidad": "Cancer"
+    },
+    {
+      "id": 3,
+      "nombre": "Geminis",
+      "fecha": "21 Junio",
+      "compatibilidad": "Libra"
+    },
+    {
+      "id": 4,
+      "nombre": "Cancer",
+      "fecha": "20 Julio",
+      "compatibilidad": "Tauro"
+    },
+    {
+      "id": 5,
+      "nombre": "Leo",
+      "fecha": "20 Agosto",
+      "compatibilidad": "Aries"
+    },
+    {
+      "id": 6,
+      "nombre": "Virgo",
+      "fecha": "16 Septiembre",
+      "compatibilidad": "Sagitario"
+    },
+    {
+      "id": 7,
+      "nombre": "Virgo",
+      "fecha": "16 Septiembre",
+      "compatibilidad": "Tauro"
+    },
+    {
+      "id": 8,
+      "nombre": "Libra",
+      "fecha": "30 Octubre",
+      "compatibilidad": "Geminis"
+    },
+    {
+      "id": 9,
+      "nombre": "Escorpio",
+      "fecha": "23 Noviembre",
+      "compatibilidad": "Cancer"
+    },
+    {
+      "id": 10,
+      "nombre": "Ofiuco",
+      "fecha": "29 Nomviembre",
+      "compatibilidad": "Piscis"
+    }
+  ]
+}
