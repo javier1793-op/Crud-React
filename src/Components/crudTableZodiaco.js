@@ -2,7 +2,7 @@ import React from 'react'
 import Table from "react-bootstrap/Table";
 import CrudRow from "./crudRow";
 
-export default function CrudTableZodiaco({zodiaco}){
+export default function CrudTableZodiaco({zodiaco, eliminar, setToedit}){
     let indice=1
   return(
     <>
@@ -19,10 +19,11 @@ export default function CrudTableZodiaco({zodiaco}){
               <tbody>
                 
                 {zodiaco.map(el=><CrudRow 
-                    nombre={el.nombre}
-                    fecha={el.fecha}
-                    compatibilidad={el.compatibilidad}
-                    indice={indice++}  /> )}
+                    db={el}
+                    indice={indice++} 
+                    key={el.id} 
+                    Toedit={setToedit} 
+                    eliminar={eliminar} /> )}
 
              </tbody>
             </Table>

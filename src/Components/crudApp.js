@@ -75,6 +75,22 @@ const zodiacos = [
 export default function CrudApp() {
     
     const [zodiaco,setZodiaco]= useState(zodiacos)
+    const [toedit,setToedit]= useState(null)
+
+  const addZodiaco=(data)=>{
+    data.id=Date.now()
+    setZodiaco([...zodiaco,data])
+  }
+
+  const updateZodicaco=(data)=>{
+   let temporal= zodiaco.map(el=>(el.id === data.id? data: el))
+   setZodiaco(temporal)
+  }
+ 
+  const deleteZodiaco=(id)=>{
+    let temporal= zodiaco.filter(el=>(el.id !== id))
+    setZodiaco(temporal)
+  }
   return (
     <>
       <Container>
@@ -82,13 +98,13 @@ export default function CrudApp() {
           <Col>
             <Card>
               <Card.Body>
-                <CrudFormZodiaco nombre={zodiaco} />
+                <CrudFormZodiaco agregar={addZodiaco} actualizar={updateZodicaco} Toedit={toedit} setToedit={setToedit} />
               </Card.Body>
             </Card>
           </Col>
           <Col>
             <h2>Zodiacos</h2>
-            <CrudTableZodiaco zodiaco={zodiaco} />
+            <CrudTableZodiaco zodiaco={zodiaco} setToedit={setToedit} eliminar={deleteZodiaco} />
           </Col>
         </Row>
       </Container>
